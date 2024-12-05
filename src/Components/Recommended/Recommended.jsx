@@ -13,7 +13,7 @@ export const Recommended = ({categoryId}) => {
    useEffect(()=>{
      fetchData();
    },[])
-console.log(apiData);
+// console.log(apiData);
 
   return (
     <div className='recommended'>

@@ -16,7 +16,7 @@ import megan from '../../assets/megan.png'
 import cameron from '../../assets/cameron.png'
 
 export const Sidebar = ({sidebar,category,setCategory}) => {
-   console.log(category)
+   // console.log(category)
   return (
     <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
         <div className="shortcut-links">
@@ -53,7 +53,7 @@ export const Sidebar = ({sidebar,category,setCategory}) => {
         <div className="subscribed-list">
            <h3>Subscribed</h3>
            <div className="side-link">
-             <img src={jack} alt="" />  <p>PewDieDie</p>
+             <img src={jack} alt="" />  <p>Mohan</p>
            </div>
            <div className="side-link">
              <img src={simon} alt="" />  <p>MrBeast</p>
