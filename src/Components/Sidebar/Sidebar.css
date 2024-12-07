@@ -74,4 +74,8 @@
     .subscribed-list h3{
         display: none;
     }
+    .small-sidebar hr{
+        width: 50%;
+        margin-bottom: 15px;
+    }
 }
