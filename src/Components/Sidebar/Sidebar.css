@@ -71,4 +71,7 @@
     .side-link p{
         display: none;
     }
+    .subscribed-list h3{
+        display: none;
+    }
 }
