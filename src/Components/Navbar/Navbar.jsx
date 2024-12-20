@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import menu_icon from '../../assets/menu.png'
 import logo from '../../assets/logo.png'
@@ -7,8 +7,15 @@ import upload_icon from '../../assets/upload.png'
 import more_icon from '../../assets/more.png'
 import notification_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/jack.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 export const Navbar = ({setSidebar}) => {
+
+  const [searchText,setSearchText] = useState("")
+  const navigate = useNavigate()
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    navigate(`/video/search/${searchText}`)
+  }
   return (
     <nav className='flex-div'>
          <div className='nav-left flex-div'>
@@ -17,10 +24,10 @@ export const Navbar = ({setSidebar}) => {
          </div>
 
          <div className='nav-middle flex-div'>
-            <div className="search-box flex-div">
-              <input type="text" placeholder='search'/>
-              <img src={search_icon} alt="" />
-            </div>
+            <form onSubmit={handleSubmit} className="search-box flex-div">
+              <input type="text" placeholder='search' value={searchText} onChange={(e)=>setSearchText(e.target.value)}/>
+              <button><img src={search_icon} alt="" /></button>
+            </form>
          </div>
 
          <div className='nav-right flex-div'>

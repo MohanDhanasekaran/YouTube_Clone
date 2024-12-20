@@ -24,3 +24,26 @@
 .card p{
     font-size: 14px;
 }
+@media (max-width:900px){
+    .card img{
+        width: 100%;
+        border-radius: 5px;
+        margin-left: 0px;
+    }
+    .card h2{
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: 5px 0px;
+    }
+    .card h3{
+        font-size: 14px;
+        font-weight: 600;
+        color: #555;
+        margin: 5px 0px;
+    }
+    .card p{
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+}

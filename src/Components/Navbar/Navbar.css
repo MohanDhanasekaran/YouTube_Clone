@@ -26,8 +26,9 @@ nav{
     outline: 0;
     background: transparent;
 }
-.nav-middle .search-box img{
-    width: 15px;
+.nav-middle .search-box button{
+    border: none;
+    background-color: transparent;
 }
 .nav-right img{
     width: 25px;
